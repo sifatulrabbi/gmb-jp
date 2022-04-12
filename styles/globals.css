@@ -8,10 +8,6 @@ body {
 }
 
 @layer utilities {
-  .border-1 {
-    @apply border-[1px];
-  }
-
   /* using vertical writing style (e.g. Japanese) */
   .writing-vertical {
     writing-mode: vertical-rl;

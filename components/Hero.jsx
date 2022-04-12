@@ -37,7 +37,10 @@ function Hero() {
       </div>
 
       {/* hero bottom */}
-      <div className="w-full p-4">
+      <div className="w-full flex">
+        <p className="text-xs font-english uppercase font-feature-vrt2 writing-vertical h-max px-1 text-transparent">
+          About
+        </p>
         <ul className="flex flex-col pl-4 pb-12 border-l-[1px] border-black">
           <li>
             <span className="font-english">GMBJAPAN</span>は
