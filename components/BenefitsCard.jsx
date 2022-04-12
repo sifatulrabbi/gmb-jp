@@ -2,7 +2,7 @@
 import React from "react";
 // components
 import { AiOutlineArrowRight } from "react-icons/ai";
-import MessyLines from "./MessyLines";
+import MessyLines from "./CustomIcons/MessyLines";
 
 // main component
 function BenefitsCard({ name, summary }) {

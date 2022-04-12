@@ -4,7 +4,7 @@ import React from "react";
 import { topIntro } from "../../static";
 import Image from "next/image";
 import Section from "../../components/Section";
-import MessyLines from "../../components/MessyLines";
+import MessyLines from "../../components/CustomIcons/MessyLines";
 
 // main component
 function Intro() {

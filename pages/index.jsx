@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Intro from "../features/introduction/Intro";
 import Benefits from "../features/benefits/Benefits";
 import WhatWeAre from "../components/WhatWeAre";
+import MainWork from "../features/mainWork/MainWork";
 
 // main component
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Intro />
       <Benefits />
       <WhatWeAre />
+      <MainWork />
     </>
   );
 }

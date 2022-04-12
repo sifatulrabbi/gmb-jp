@@ -1,5 +1,7 @@
+// dependencies
 import React from "react";
 
+// main component
 function WhatAreWeIllustration2() {
   return (
     <svg

@@ -4,8 +4,8 @@ import React from "react";
 import Section from "./Section";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
-import WhatAreWeIllustration1 from "./WhatAreWeIllustration1";
-import WhatAreWeIllustration2 from "./WhatAreWeIllustration2";
+import WhatAreWeIllustration1 from "./CustomIcons/WhatAreWeIllustration1";
+import WhatAreWeIllustration2 from "./CustomIcons/WhatAreWeIllustration2";
 
 // main component
 function WhatWeAre() {
