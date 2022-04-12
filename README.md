@@ -1,1 +1,1 @@
-# GMB/JAPAN
+# GMB JAPAN

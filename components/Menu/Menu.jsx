@@ -8,7 +8,7 @@ import MenuExtraLinks from "./MenuExtraLinks";
 function Menu({ show }) {
   return (
     <div
-      className={`"z-50 absolute top-0 right-0 left-0 bottom-0 bg-[#292929] text-white flex justify-start items-center overflow-hidden`}
+      className={`z-50 fixed top-0 right-0 left-0 bottom-0 bg-[#292929] text-white flex justify-start items-center overflow-hidden`}
     >
       <section className="min-w-[120px] max-w-[120px] h-full border-r-[1px] border-[#393939] p-4 relative flex-col justify-start items-center">
         <div className="leading-[1] absolute">

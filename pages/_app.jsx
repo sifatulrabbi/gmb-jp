@@ -15,9 +15,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <RecoilRoot>
-        <MenuProvider>
-          <Component {...pageProps} />
-        </MenuProvider>
+        <MenuProvider />
+        <Component {...pageProps} />
       </RecoilRoot>
     </>
   );
