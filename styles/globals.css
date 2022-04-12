@@ -4,7 +4,7 @@
 
 body {
   overflow-x: hidden !important;
-  @apply font-japanese;
+  @apply font-sans;
 }
 
 @layer utilities {

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { v4 } from "uuid";
 // states
 import { useRecoilValue } from "recoil";
-import { menuState } from "../../features/Menu/menuState";
+import { menuState } from "../../features/menu/menuState";
 
 // main component
 function MenuLinks() {

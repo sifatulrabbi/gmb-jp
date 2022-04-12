@@ -6,8 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      english: ["Lato", "sans-serif"],
-      japanese: ["Noto Serif JP", "serif"],
+      sans: ["Popping", "Noto Sans JP", "sans-serif"],
     },
   },
   plugins: [],

@@ -12,13 +12,15 @@ function Hero() {
       <div className="flex flex-row items-start gap-12">
         {/* hero left logo image */}
         <div className="max-w-[20%]">
-          <Image src={topLogo} alt="" layout="intrinsic" />
+          <span className="writing-vertical text-[80px] leading-[1] pt-4">
+            GBM/JAPAN
+          </span>
         </div>
 
         {/* hero right */}
         <div className="flex flex-col gap-8 mt-[20vh] pr-4">
           {/* hero right top text */}
-          <h1 className="font-bold text-3xl">
+          <h1 className="font-medium text-3xl">
             集客の景色を
             <br />
             変えます
@@ -38,12 +40,12 @@ function Hero() {
 
       {/* hero bottom */}
       <div className="w-full flex">
-        <p className="text-xs font-english uppercase font-feature-vrt2 writing-vertical h-max px-1 text-transparent">
+        <p className="text-xs uppercase font-feature-vrt2 writing-vertical h-max px-1 text-transparent">
           About
         </p>
         <ul className="flex flex-col pl-4 pb-12 border-l-[1px] border-black">
           <li>
-            <span className="font-english">GMBJAPAN</span>は
+            <span>GMBJAPAN</span>は
           </li>
           <li>あなたのお店に</li>
           <li>お客様を呼ぶ仕掛けを作ります</li>
