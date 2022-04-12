@@ -9,7 +9,7 @@ function Section({ className, asideTitle, mainTitle, body }) {
       className={`w-full h-max flex justify-start items-start px-6 ${className}`}
     >
       {/* section main */}
-      <div className="border-l-[1px] border-black pt-16 flex flex-col justify-start items-start">
+      <div className="w-full border-l-[1px] border-black pt-16 flex flex-col justify-start items-start">
         {/* section header */}
         <div
           className={`flex relative pl-6 w-full border-l-2 border-black ${mainTitle.className}`}
