@@ -2,8 +2,7 @@
 import React from "react";
 // components
 import { AiOutlineArrowRight } from "react-icons/ai";
-import Image from "next/image";
-import { bgMessyLines } from "../static";
+import MessyLines from "./MessyLines";
 
 // main component
 function BenefitsCard({ name, summary }) {
@@ -16,13 +15,8 @@ function BenefitsCard({ name, summary }) {
           dangerouslySetInnerHTML={{ __html: name }}
         ></h5>
         <AiOutlineArrowRight className="text-xl" />
-        <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
-          <Image
-            src={bgMessyLines}
-            alt={name}
-            layout="intrinsic"
-            className="object-cover"
-          />
+        <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-[-1]">
+          <MessyLines />
         </div>
       </div>
 

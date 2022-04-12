@@ -1,18 +1,13 @@
 // dependencies
 import React from "react";
-import { v4 } from "uuid";
-// states
-import { useRecoilValue } from "recoil";
-import { introState } from "./introState";
 // components
 import { topIntro } from "../../static";
 import Image from "next/image";
 import Section from "../../components/Section";
+import MessyLines from "../../components/MessyLines";
 
 // main component
 function Intro() {
-  const intro = useRecoilValue(introState);
-
   return (
     <Section
       className="bg-gray-200/60"
@@ -20,20 +15,37 @@ function Intro() {
       mainTitle={{ content: "Googleマイビジネス やってますか？" }}
       body={{
         content: (
-          <>
-            <ul className="flex flex-row justify-around items-center mt-[6vh]">
-              {intro.map((item) => (
-                <li
-                  key={v4()}
-                  className="writing-vertical font-feature-vrt2 text-right font-japanese"
-                  dangerouslySetInnerHTML={{ __html: item }}
-                ></li>
-              ))}
-            </ul>
-            <div className="px-4">
-              <Image src={topIntro} alt="" layout="intrinsic" />
+          <div className="grid grid-cols-3">
+            <div className="relative writing-vertical flex justify-center items-center mt-[100px]">
+              <p>やり方がよくわからない</p>
+              <div className="absolute w-full h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <MessyLines />
+              </div>
             </div>
-          </>
+            <div className="relative writing-vertical flex justify-center items-center">
+              <p>他のSNSと一緒でしょ?</p>
+              <div className="absolute w-full h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <MessyLines />
+              </div>
+            </div>
+            <div className="relative writing-vertical flex justify-center items-center mt-[100px]">
+              <p>
+                いちおう登録したが
+                <br />手 応 え が な い
+              </p>
+              <div className="absolute w-full h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <MessyLines />
+              </div>
+            </div>
+            <figure className="mx-auto col-span-3">
+              <Image
+                src={topIntro}
+                layout="intrinsic"
+                alt="Googleマイビジネス やってますか?"
+                className="object-cover"
+              />
+            </figure>
+          </div>
         ),
       }}
     />

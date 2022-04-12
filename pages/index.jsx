@@ -4,14 +4,16 @@ import React from "react";
 import Hero from "../components/Hero";
 import Intro from "../features/introduction/Intro";
 import Benefits from "../features/benefits/Benefits";
+import WhatWeAre from "../components/WhatWeAre";
 
 // main component
 export default function Home() {
   return (
-    <div className="h-full w-full">
+    <>
       <Hero />
       <Intro />
       <Benefits />
-    </div>
+      <WhatWeAre />
+    </>
   );
 }

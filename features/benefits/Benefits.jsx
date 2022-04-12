@@ -27,7 +27,7 @@ function Benefits() {
                 layout="intrinsic"
               />
             </div>
-            <ul className="w-full flex flex-col justify-start items-start">
+            <ul className="w-full flex flex-col justify-start items-start pl-6">
               {benefits.map((benefit) => (
                 <BenefitsCard key={v4()} {...benefit} />
               ))}
