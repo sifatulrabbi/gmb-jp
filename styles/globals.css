@@ -4,4 +4,21 @@
 
 body {
   overflow-x: hidden !important;
+  @apply font-japanese;
+}
+
+@layer utilities {
+  .border-1 {
+    @apply border-[1px];
+  }
+
+  /* using vertical writing style (e.g. Japanese) */
+  .writing-vertical {
+    writing-mode: vertical-rl;
+  }
+
+  /* using vertical writing style (e.g. Japanese) */
+  .font-feature-vrt2 {
+    font-feature-settings: "vrt2";
+  }
 }

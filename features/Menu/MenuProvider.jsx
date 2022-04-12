@@ -17,7 +17,7 @@ function MenuProvider({ children }) {
   return (
     <>
       <MenuBtn show={menu.show} toggleMenu={toggleMenu} />
-      {menu.show ? <Menu /> : children}
+      {menu.show ? <Menu show={menu.show} /> : children}
     </>
   );
 }

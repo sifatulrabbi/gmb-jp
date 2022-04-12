@@ -4,7 +4,10 @@ module.exports = {
     "./components/**/*.{tsx,ts,jsx,js}",
   ],
   theme: {
-    // fontFamily: {},
+    fontFamily: {
+      english: ["Lato", "sans-serif"],
+      japanese: ["Noto Serif JP", "serif"],
+    },
   },
   plugins: [],
 };
