@@ -10,13 +10,19 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 // main component
 function MenuExtraLinks() {
-  const { extraLinks } = useRecoilValue(menuState);
+  const { extraLinks, show } = useRecoilValue(menuState);
 
   return (
     <div className="flex flex-col justify-start items-start gap-8 mt-[12vh]">
       {extraLinks.map(({ name, path }) => (
         <Link key={v4()} href={path}>
-          <a className="flex flex-row justify-start items-center text-lg font-medium gap-4 p-4 border-l-[1px]">
+          <a
+            className={`flex flex-row justify-start items-center text-lg font-medium gap-4 p-4 border-l-[1px] origin-top ${
+              show
+                ? "-translate-y-[1rem] opacity-0 scale-y-[0.8] menu-anim-text-down-delay"
+                : "-translate-y-[0] opacity-1 scale-y-1 menu-anim-text-up"
+            }`}
+          >
             {name}
             <span className="flex justify-center items-center p-1 border-[1px] border-gray-300 rounded-full">
               <AiOutlineArrowRight className="text-sm" />
