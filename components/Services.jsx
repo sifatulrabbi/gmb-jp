@@ -2,12 +2,12 @@
 import React from "react";
 import { v4 } from "uuid";
 // components
-import Section from "../Section";
-import CircleLogo from "../CustomIcons/CircleLogo";
+import Section from "./Section";
+import CircleLogo from "./CustomIcons/CircleLogo";
 
 function ServicesCard() {
   return (
-    <div className="font-biz shadow-2xl -mx-1 bg-white relative">
+    <div className="font-biz shadow-lg -mx-1 bg-white relative">
       <div className="absolute z-[10] w-16 top-[5%] left-[20%]">
         <CircleLogo />
       </div>

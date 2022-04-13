@@ -7,12 +7,12 @@ import { heroImg } from "../static";
 // main component
 function Hero() {
   return (
-    <div className="w-full h-screen flex flex-col">
+    <section className="font-yumin w-full h-screen flex flex-col">
       {/* hero top */}
       <div className="flex flex-row items-start gap-12">
         {/* hero left logo image */}
         <div className="max-w-[20%]">
-          <span className="writing-vertical text-[80px] leading-[1] pt-4 font-biz">
+          <span className="writing-vertical text-[90px] leading-[0.75] pt-4 font-biz">
             GBM/JAPAN
           </span>
         </div>
@@ -20,14 +20,14 @@ function Hero() {
         {/* hero right */}
         <div className="flex flex-col gap-8 mt-[20vh] pr-4">
           {/* hero right top text */}
-          <h1 className="font-bold text-3xl font-yumin">
+          <h1 className="text-3xl font-yumin font-bold">
             集客の景色を
             <br />
             変えます
           </h1>
 
           {/* hero right image */}
-          <div className="overflow-hidden">
+          <div className="overflow-hidden max-w-[260px]">
             <Image
               src={heroImg}
               alt=""
@@ -39,7 +39,7 @@ function Hero() {
       </div>
 
       {/* hero bottom */}
-      <div className="w-full flex">
+      <div className="w-full flex mt-12">
         <p className="text-xs uppercase font-feature-vrt2 writing-vertical h-max px-1 text-transparent">
           About
         </p>
@@ -51,7 +51,7 @@ function Hero() {
           <li>お客様を呼ぶ仕掛けを作ります</li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

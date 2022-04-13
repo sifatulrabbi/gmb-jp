@@ -7,7 +7,9 @@ import Benefits from "../features/benefits/Benefits";
 import WhatWeAre from "../components/WhatWeAre";
 import MainWork from "../features/mainWork/MainWork";
 import ChapterTwo from "../components/ChapterTwo";
-import Services from "../components/Services/Services";
+import Services from "../components/Services";
+import Testimonials from "../features/Testimonials/Testimonials";
+import Footer from "../components/Footer";
 
 // main component
 export default function Home() {
@@ -20,6 +22,8 @@ export default function Home() {
       <MainWork />
       <ChapterTwo />
       <Services />
+      <Testimonials />
+      <Footer />
     </>
   );
 }
