@@ -7,7 +7,7 @@ import Menu from "../../components/Menu/Menu";
 import MenuBtn from "../../components/Menu/MenuBtn";
 
 // main component
-function MenuProvider({ children }) {
+function MenuProvider() {
   const [menu, setMenu] = useRecoilState(menuState);
 
   function toggleMenu() {
@@ -17,7 +17,7 @@ function MenuProvider({ children }) {
   return (
     <>
       <MenuBtn show={menu.show} toggleMenu={toggleMenu} />
-      {menu.show && <Menu show={menu.show} />}
+      <Menu show={menu.show} />
     </>
   );
 }
