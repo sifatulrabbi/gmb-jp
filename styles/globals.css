@@ -2,9 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "biz";
+  src: url("../assets/biz-udgothic-regular.ttc");
+  font-weight: 400;
+  style: normal;
+}
+
+@font-face {
+  font-family: "biz";
+  src: url("../assets/biz-udgothic-bold.ttc");
+  font-weight: 700;
+  style: normal;
+}
+
+@font-face {
+  font-family: "yumin";
+  src: url("../assets/yumin.ttf");
+  font-weight: 400;
+  style: normal;
+}
+
+@font-face {
+  font-family: "japanese";
+  src: url("../assets/japanese.ttf");
+  font-weight: 400;
+  style: normal;
+}
+
+@font-face {
+  font-family: "yumin";
+  src: url("../assets/yumindb.ttf");
+  font-weight: 700;
+  style: normal;
+}
+
 body {
   overflow-x: hidden !important;
-  @apply font-sans;
+  @apply font-biz;
 }
 
 @layer utilities {

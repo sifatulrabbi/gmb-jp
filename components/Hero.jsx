@@ -2,7 +2,7 @@
 import React from "react";
 // components
 import Image from "next/image";
-import { heroImg, topLogo } from "../static";
+import { heroImg } from "../static";
 
 // main component
 function Hero() {
@@ -12,7 +12,7 @@ function Hero() {
       <div className="flex flex-row items-start gap-12">
         {/* hero left logo image */}
         <div className="max-w-[20%]">
-          <span className="writing-vertical text-[80px] leading-[1] pt-4">
+          <span className="writing-vertical text-[80px] leading-[1] pt-4 font-biz">
             GBM/JAPAN
           </span>
         </div>
@@ -20,7 +20,7 @@ function Hero() {
         {/* hero right */}
         <div className="flex flex-col gap-8 mt-[20vh] pr-4">
           {/* hero right top text */}
-          <h1 className="font-medium text-3xl">
+          <h1 className="font-bold text-3xl font-yumin">
             集客の景色を
             <br />
             変えます

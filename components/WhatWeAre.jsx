@@ -14,7 +14,7 @@ function WhatWeAre() {
       {/* first section */}
       <Section
         className="bg-[#292929] text-white pr-0"
-        asideTitle={{ className: "text-transparent", content: "What are we" }}
+        asideTitle={{ content: "Introduction" }}
         mainTitle={{
           className: "border-white pr-6",
           content: "マイビジ集客の決定版 GMBクラブとは?",
@@ -40,7 +40,7 @@ function WhatWeAre() {
       {/* second section */}
       <Section
         className="bg-[#3C3C3C] text-white pr-0"
-        asideTitle={{ className: "text-transparent", content: "What are we" }}
+        asideTitle={{ content: "Chapter 3" }}
         mainTitle={{
           className: "border-white pr-6",
           content: (

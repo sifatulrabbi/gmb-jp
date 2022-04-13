@@ -25,6 +25,7 @@ function MainWork() {
           ),
         }}
         body={{
+          className: "pb-8",
           content: (
             <ul className="flex flex-col justify-start items-start gap-16 pl-6">
               {mainWork.map((work, index) => (
