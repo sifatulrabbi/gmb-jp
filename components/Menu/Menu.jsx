@@ -18,7 +18,7 @@ function Menu({ show }) {
             show ? "menu-anim-left-down" : "menu-anim-left-up"
           }`}
         >
-          <span className="block text-[110px] writing-vertical pt-12 font-biz opacity-10">
+          <span className="block text-[100px] writing-vertical pt-12 font-poppins opacity-10">
             GMB/JAPAN
           </span>
         </div>

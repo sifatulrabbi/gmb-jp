@@ -9,6 +9,7 @@ module.exports = {
       biz: ["biz", "sans-serif"],
       yumin: ["yumin", "serif"],
       japanese: ["japanese", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
     },
   },
   plugins: [],

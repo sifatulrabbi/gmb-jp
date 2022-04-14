@@ -9,15 +9,27 @@ import MenuBtn from "../../components/Menu/MenuBtn";
 // main component
 function MenuProvider() {
   const [menu, setMenu] = useRecoilState(menuState);
+  const [mount, setMount] = React.useState(false);
+
+  function handleMount() {
+    if (!mount) {
+      setMount(true);
+    } else {
+      setTimeout(() => {
+        setMount(false);
+      }, 900);
+    }
+  }
 
   function toggleMenu() {
+    handleMount();
     setMenu((prev) => ({ ...prev, show: !prev.show }));
   }
 
   return (
     <>
       <MenuBtn show={menu.show} toggleMenu={toggleMenu} />
-      <Menu show={menu.show} />
+      {mount && <Menu show={menu.show} />}
     </>
   );
 }

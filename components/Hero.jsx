@@ -12,7 +12,7 @@ function Hero() {
       <div className="flex flex-row items-start gap-12">
         {/* hero left logo image */}
         <div className="max-w-[20%]">
-          <span className="writing-vertical text-[90px] leading-[0.75] pt-4 font-biz">
+          <span className="writing-vertical text-[90px] leading-[0.75] pt-4 font-poppins">
             GBM/JAPAN
           </span>
         </div>
@@ -21,9 +21,8 @@ function Hero() {
         <div className="flex flex-col gap-8 mt-[20vh] pr-4">
           {/* hero right top text */}
           <h1 className="text-3xl font-yumin font-bold">
-            集客の景色を
-            <br />
-            変えます
+            <span className="typewriter">集客の景色を</span>
+            <span className="typewriter">変えます</span>
           </h1>
 
           {/* hero right image */}
@@ -44,11 +43,13 @@ function Hero() {
           About
         </p>
         <ul className="flex flex-col pl-4 pb-12 border-l-[1px] border-black">
-          <li>
+          <li className="text-anim-slide-right">
             <span>GMBJAPAN</span>は
           </li>
-          <li>あなたのお店に</li>
-          <li>お客様を呼ぶ仕掛けを作ります</li>
+          <li className="text-anim-slide-right">あなたのお店に</li>
+          <li className="text-anim-slide-right">
+            お客様を呼ぶ仕掛けを作ります
+          </li>
         </ul>
       </div>
     </section>

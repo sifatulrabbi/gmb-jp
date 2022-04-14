@@ -159,3 +159,50 @@ body {
     transform: translateY(-1rem);
   }
 }
+
+/* typewriter animation for the hero text */
+/* class */
+.typewriter-anim {
+  animation: typewriter 3.5s ease-out;
+  @apply block whitespace-nowrap border-r-4 border-black tracking-wider overflow-hidden;
+}
+
+/* keyframes */
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    borer-color: black;
+  }
+}
+
+/* text slide to right */
+
+/* classes */
+.text-anim-slide-right {
+  animation: text-slide-right 0.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* keyframes */
+@keyframes text-slide-right {
+  from {
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} ;
