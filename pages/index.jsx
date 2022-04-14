@@ -6,7 +6,7 @@ import Intro from "../features/introduction/Intro";
 import Benefits from "../features/benefits/Benefits";
 import WhatWeAre from "../components/WhatWeAre";
 import MainWork from "../features/mainWork/MainWork";
-import ChapterTwo from "../components/ChapterTwo";
+import ChapterFive from "../components/ChapterFive";
 import Services from "../components/Services";
 import Testimonials from "../features/Testimonials/Testimonials";
 import Footer from "../components/Footer";
@@ -20,7 +20,7 @@ export default function Home() {
       <Benefits />
       <WhatWeAre />
       <MainWork />
-      <ChapterTwo />
+      <ChapterFive />
       <Services />
       <Testimonials />
       <Footer />

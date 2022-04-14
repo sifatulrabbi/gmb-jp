@@ -3,7 +3,6 @@ import React from "react";
 // components
 import Section from "./Section";
 import PersonTalk from "./CustomIcons/PersonTalk";
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 // main component
 function ChapterFive() {

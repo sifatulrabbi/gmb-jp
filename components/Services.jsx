@@ -1,6 +1,7 @@
 // dependencies
 import React from "react";
 import { v4 } from "uuid";
+import { useInViewport } from "react-in-viewport";
 // components
 import Section from "./Section";
 import CircleLogo from "./CustomIcons/CircleLogo";
@@ -28,7 +29,7 @@ function ServicesCard() {
       ].map((content) => (
         <div
           key={v4()}
-          className="w-full p-2 h-[42px] border-b-2 border-[#E6E6E6] last:border-transparent text-center"
+          className={`w-full p-2 h-[42px] border-b-2 border-[#E6E6E6] last:border-transparent text-center`}
         >
           {content}
         </div>
@@ -39,6 +40,13 @@ function ServicesCard() {
 
 // main component
 function Services() {
+  const elementRef = React.useRef(null);
+  const { inViewport } = useInViewport(
+    elementRef,
+    {},
+    { disconnectOnLeave: false }
+  );
+
   return (
     <Section
       className="bg-gray-200/70"
@@ -47,13 +55,27 @@ function Services() {
       body={{
         content: (
           <>
-            <div className="pl-6 font-biz">
-              <p>
+            <div ref={elementRef} className="pl-6 font-biz">
+              <p
+                className={`opacity-0 -translate-y-4 ${
+                  inViewport ? "anim-text-slide-down-delay" : ""
+                }`}
+              >
                 独自ランキングファクター
-                <br />
+              </p>
+              <p
+                className={`opacity-0 -translate-y-4 ${
+                  inViewport ? "anim-text-slide-down-delay" : ""
+                }`}
+              >
                 GoogleマイビジネスAPI-Developer
-                <br />
-                <small className="text-sm">業界屈指の継続率</small>
+              </p>
+              <p
+                className={`text-sm opacity-0 -translate-y-4 ${
+                  inViewport ? "anim-text-slide-down-delay" : ""
+                }`}
+              >
+                業界屈指の継続率
               </p>
             </div>
             <div className="flex w-full flex-col justify-start items-center font-biz mt-12 mb-6">

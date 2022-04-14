@@ -232,7 +232,7 @@ body {
 /* classes */
 .text-anim-slide-right {
   animation: text-slide-right 0.7s ease forwards;
-  animation-delay: 0.6s;
+  animation-delay: 0.5s;
 }
 
 /* keyframes */
@@ -245,4 +245,85 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
-} ;
+}
+
+.anim-text-slide-down {
+  animation: text-slide-down 0.8s ease forwards;
+  transform: translateY(-1rem);
+}
+
+.anim-text-slide-down-delay {
+  @apply anim-text-slide-down;
+  animation-delay: 0.5s;
+}
+@keyframes text-slide-down {
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-anim-slide-left {
+  animation: text-slide-left 0.7s ease forwards;
+  transform: translateX(1rem);
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+@keyframes text-slide-left {
+  from {
+    transform: translateX(0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.anim-fade-in-grow {
+  animation: fade-in-grow 0.5s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  transform: scale(0.95);
+}
+@keyframes fade-in-grow {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.grow-anim {
+  transform-origin: top;
+  animation: grow 0.5s ease forwards;
+}
+@keyframes grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.anim-grow-right {
+  transform-origin: top;
+  animation: grow-right 0.5s ease forwards;
+  animation-delay: 0.5s;
+}
+@keyframes grow-right {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
