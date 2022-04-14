@@ -52,6 +52,45 @@ body {
   .font-feature-vrt2 {
     font-feature-settings: "vrt2";
   }
+
+  .hero-display {
+    font-size: clamp(90px, 10vw, 200px);
+  }
+
+  .hero-h1 {
+    font-size: clamp(34px, 5vw, 100px);
+  }
+
+  .intro-section-md-grid {
+    grid-template-areas:
+      "... text2 ..."
+      "text1 img text3";
+  }
+}
+
+.intro-section {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "text1 text2 text3"
+    "img img img";
+  grid-template-columns: repeat(3, 1fr);
+  @apply md:intro-section-md-grid;
+}
+
+.intro-section-text1 {
+  grid-area: text1;
+}
+
+.intro-section-text2 {
+  grid-area: text2;
+}
+
+.intro-section-text3 {
+  grid-area: text3;
+}
+.intro-section-img {
+  grid-area: img;
 }
 
 /* menu animations */
@@ -191,8 +230,8 @@ body {
 
 /* classes */
 .text-anim-slide-right {
-  animation: text-slide-right 0.5s ease forwards;
-  animation-delay: 0.5s;
+  animation: text-slide-right 0.7s ease forwards;
+  animation-delay: 0.6s;
 }
 
 /* keyframes */

@@ -7,20 +7,18 @@ import { heroImg } from "../static";
 // main component
 function Hero() {
   return (
-    <section className="font-yumin w-full h-screen flex flex-col">
+    <section className="font-yumin w-full h-max flex flex-col mb-8 min-h-screen">
+      <div className="max-w-[20%] absolute">
+        <span className="block writing-vertical hero-display leading-[0.75] pt-4 font-poppins">
+          GBM/JAPAN
+        </span>
+      </div>
       {/* hero top */}
-      <div className="flex flex-row items-start gap-12">
-        {/* hero left logo image */}
-        <div className="max-w-[20%]">
-          <span className="writing-vertical text-[90px] leading-[0.75] pt-4 font-poppins">
-            GBM/JAPAN
-          </span>
-        </div>
-
+      <div className="flex flex-col items-start gap-6 md:ml-[15vw]">
         {/* hero right */}
-        <div className="flex flex-col gap-8 mt-[20vh] pr-4">
+        <div className="w-full flex flex-col gap-8 mt-[20vh] pr-4 pl-[90px] md:pl-0 justify-center items-center md:flex-row">
           {/* hero right top text */}
-          <h1 className="text-3xl font-yumin font-bold">
+          <h1 className="font-yumin font-bold hero-h1 flex flex-col">
             <span className="typewriter">集客の景色を</span>
             <span className="typewriter">変えます</span>
           </h1>
@@ -35,23 +33,22 @@ function Hero() {
             />
           </div>
         </div>
+        <div className="w-full flex mt-12 text-lg md:text-2xl">
+          <p className="text-xs uppercase font-feature-vrt2 writing-vertical h-max px-1 text-transparent">
+            About
+          </p>
+          <ul className="flex flex-col pl-4 pb-4 border-l-[1px] border-black">
+            <li className="text-anim-slide-right">
+              <span>GMBJAPAN</span>は
+            </li>
+            <li className="text-anim-slide-right">あなたのお店に</li>
+            <li className="text-anim-slide-right">
+              お客様を呼ぶ仕掛けを作ります
+            </li>
+          </ul>
+        </div>
       </div>
-
       {/* hero bottom */}
-      <div className="w-full flex mt-12">
-        <p className="text-xs uppercase font-feature-vrt2 writing-vertical h-max px-1 text-transparent">
-          About
-        </p>
-        <ul className="flex flex-col pl-4 pb-12 border-l-[1px] border-black">
-          <li className="text-anim-slide-right">
-            <span>GMBJAPAN</span>は
-          </li>
-          <li className="text-anim-slide-right">あなたのお店に</li>
-          <li className="text-anim-slide-right">
-            お客様を呼ぶ仕掛けを作ります
-          </li>
-        </ul>
-      </div>
     </section>
   );
 }

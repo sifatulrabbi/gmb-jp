@@ -57,8 +57,10 @@ function Services() {
               </p>
             </div>
             <div className="flex w-full flex-col justify-start items-center font-biz mt-12 mb-6">
-              <span className="block font-bold text-4xl">GMB/JAPAN</span>
-              <span className="block text-xs font-bold">
+              <span className="block font-bold text-4xl md:text-5xl lg:text-6xl">
+                GMB/JAPAN
+              </span>
+              <span className="block text-xs lg:text-base font-bold">
                 ジーエムビージャパン
               </span>
             </div>

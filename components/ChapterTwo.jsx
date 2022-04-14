@@ -10,7 +10,8 @@ function ChapterTwo() {
   return (
     <Section
       className="bg-[#292929] text-white pr-0"
-      asideTitle={{ className: "text-transparent", content: "Chapter 2" }}
+      wrapperClass="lg:flex-row"
+      asideTitle={{ content: "Chapter 2" }}
       mainTitle={{
         className: "border-white pr-6",
         content: (
@@ -26,9 +27,6 @@ function ChapterTwo() {
         content: (
           <div className="relative w-full mb-12">
             <PersonTalk />
-            <button className="bg-[#3C3C3C] h-[50px] w-[50px] rounded-full flex justify-center items-center absolute right-8 bottom-0 translate-y-1/2">
-              <AiOutlineArrowRight className="text-xl" />
-            </button>
           </div>
         ),
       }}

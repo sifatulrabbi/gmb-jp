@@ -11,6 +11,8 @@ function MenuProvider() {
   const [menu, setMenu] = useRecoilState(menuState);
   const [mount, setMount] = React.useState(false);
 
+  // when mount === false set mount = true instantly
+  // when mount === true set mount = false after 900ms
   function handleMount() {
     if (!mount) {
       setMount(true);
@@ -21,7 +23,9 @@ function MenuProvider() {
     }
   }
 
+  // toggling the mount and menu
   function toggleMenu() {
+    // handleMount before the setMenu
     handleMount();
     setMenu((prev) => ({ ...prev, show: !prev.show }));
   }
