@@ -15,7 +15,7 @@ function Benefits() {
 
   return (
     <Section
-      asideTitle={{ content: "Chapter 1" }}
+      asideTitle={{ content: "Chapter 2" }}
       mainTitle={{ content: "GMBクラブに入ると…" }}
       body={{
         content: (

@@ -16,7 +16,7 @@ function MainWork() {
     <>
       <Section
         wrapperClass="pb-[10vh]"
-        asideTitle={{ className: "text-transparent", content: "Chapter 4" }}
+        asideTitle={{ content: "Chapter 4" }}
         mainTitle={{
           className: "mb-10",
           content: (

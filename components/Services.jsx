@@ -42,7 +42,7 @@ function Services() {
   return (
     <Section
       className="bg-gray-200/70"
-      asideTitle={{ content: "" }}
+      asideTitle={{ content: "Chapter 6" }}
       mainTitle={{ className: "font-biz", content: "集客の景色が変わる" }}
       body={{
         content: (

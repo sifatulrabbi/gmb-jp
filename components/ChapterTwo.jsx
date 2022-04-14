@@ -6,12 +6,12 @@ import PersonTalk from "./CustomIcons/PersonTalk";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 // main component
-function ChapterTwo() {
+function ChapterFive() {
   return (
     <Section
       className="bg-[#292929] text-white pr-0"
       wrapperClass="lg:flex-row"
-      asideTitle={{ content: "Chapter 2" }}
+      asideTitle={{ content: "Chapter 5" }}
       mainTitle={{
         className: "border-white pr-6",
         content: (
@@ -34,4 +34,4 @@ function ChapterTwo() {
   );
 }
 
-export default ChapterTwo;
+export default ChapterFive;
