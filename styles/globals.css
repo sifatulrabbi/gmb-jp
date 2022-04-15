@@ -249,7 +249,7 @@ body {
 
 .anim-text-slide-down {
   animation: text-slide-down 0.8s ease forwards;
-  transform: translateY(-1rem);
+  transform: translateY(-2.3rem);
 }
 
 .anim-text-slide-down-delay {
@@ -258,7 +258,7 @@ body {
 }
 @keyframes text-slide-down {
   from {
-    transform: translateY(-1rem);
+    transform: translateY(-2.3rem);
     opacity: 0;
   }
   to {
@@ -325,5 +325,72 @@ body {
   }
   to {
     width: 100%;
+  }
+}
+
+.menu-btn:hover .menu-btn-bar {
+  animation: menu-btn-hover 0.3s ease forwards;
+}
+
+.menu-btn:hover .menu-btn-text {
+  animation: menu-btn-hover-text 0.5s ease forwards;
+  animation-delay: 0s;
+}
+
+.menu-btn:not(:hover) .menu-btn-bar {
+  animation: menu-btn-hover-reverse 0.3s ease forwards;
+}
+
+.menu-btn:not(:hover) .menu-btn-text {
+  animation: menu-btn-hover-text-reverse 0.5s ease forwards;
+  animation-delay: 0s;
+}
+
+.menu-btn.show .menu-btn-text {
+  animation: none;
+  opacity: 0;
+}
+
+.menu-btn.show .menu-btn-bar {
+  animation: none;
+}
+
+@keyframes menu-btn-hover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes menu-btn-hover-text {
+  from {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(80%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-btn-hover-reverse {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menu-btn-hover-text-reverse {
+  from {
+    transform: translate(80%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 0;
   }
 }
