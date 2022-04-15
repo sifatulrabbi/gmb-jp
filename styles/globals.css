@@ -200,33 +200,6 @@ body {
   }
 }
 
-/* typewriter animation for the hero text */
-/* class */
-.typewriter-anim {
-  animation: typewriter 3.5s ease-out;
-  @apply block whitespace-nowrap border-r-4 border-black tracking-wider overflow-hidden;
-}
-
-/* keyframes */
-@keyframes typewriter {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    borer-color: black;
-  }
-}
-
 /* text slide to right */
 
 /* classes */
@@ -338,6 +311,7 @@ body {
 }
 
 .menu-btn:not(:hover) .menu-btn-bar {
+  transform: translateY(-100%);
   animation: menu-btn-hover-reverse 0.3s ease forwards;
 }
 
@@ -353,6 +327,7 @@ body {
 
 .menu-btn.show .menu-btn-bar {
   animation: none;
+  @apply translate-y-0;
 }
 
 @keyframes menu-btn-hover {
@@ -394,3 +369,5 @@ body {
     opacity: 0;
   }
 }
+
+@import url("./hero.css");

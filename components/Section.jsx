@@ -29,13 +29,13 @@ function Section({
   return (
     <section
       ref={sectionElementRef}
-      className={`w-full flex justify-start items-start px-6 md:pl-[15vw] font-yumin border-black 
+      className={`w-full flex justify-start items-start px-6 md:pl-[15vw] font-yumin 
       ${className} 
       ${inViewport ? animations.section : ""}`}
     >
       {/* section main */}
       <div
-        className={`w-full h-full border-l-[1px] border-inherit pt-[12vh] flex flex-col justify-start items-start 
+        className={`w-full h-full pt-[12vh] flex flex-col justify-start items-start 
         ${wrapperClass} 
         ${inViewport ? animations.wrapper : ""}`}
       >
