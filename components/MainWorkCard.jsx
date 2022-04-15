@@ -42,7 +42,7 @@ function MainWorkCard({ Icon, name, summary, index }) {
             {name}
           </h4>
           {/* icon */}
-          <div className="max-w-[136px] h-auto">
+          <div className="max-w-[136px] w-[30vw] h-auto">
             <Icon />
           </div>
           {/* body */}

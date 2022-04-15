@@ -28,21 +28,19 @@ function BenefitsCard({ name, summary }) {
           }`}
           dangerouslySetInnerHTML={{ __html: name }}
         ></h5>
-        <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-[-1]">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1] w-[130%] flex items-center">
           <MessyLines />
         </div>
       </div>
-
-      <AiOutlineArrowRight className="block text-[5rem]" />
-
-      {/* card right part */}
+      <div className="w-max">
+        <AiOutlineArrowRight className="block text-[1rem] lg:text-[2rem]" />
+      </div>
       <p
         className={`tracking-wider leading-relaxed opacity-0 -transform-y-4 ${
           inViewport ? "anim-text-slide-down" : ""
         }`}
-      >
-        {summary}
-      </p>
+        dangerouslySetInnerHTML={{ __html: summary }}
+      ></p>
     </div>
   );
 }

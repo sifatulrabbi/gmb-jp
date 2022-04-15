@@ -23,12 +23,16 @@ function IntroText({ content, gridAreaName }) {
       ${gridAreaName}`}
     >
       <p
-        className={`z-[2] opacity-0 -transform-y-4 ${
-          inViewport ? "anim-text-slide-down" : ""
+        className={`z-[2] opacity-0 translate-y-4 ${
+          inViewport ? "intro-text" : ""
         }`}
         dangerouslySetInnerHTML={{ __html: content }}
       ></p>
-      <div className="-z-1 absolute w-full max-w-[240px] h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div
+        className={`-z-1 flex items-center absolute w-full min-w-[120px] max-w-[440px] h-auto bottom-0 scale-0 left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+          inViewport ? "intro-messy-lines" : ""
+        }`}
+      >
         <MessyLines />
       </div>
     </div>
@@ -48,15 +52,15 @@ function Intro() {
             {[
               {
                 content: "やり方がよくわからない",
-                gridAreaName: "intro-section-text1 mt-[100px]",
+                gridAreaName: "intro-section-text1 mt-[100px] md:-mt-[180px]",
               },
               {
                 content: "他のSNSと一緒でしょ?",
-                gridAreaName: "intro-section-text2",
+                gridAreaName: "intro-section-text2 md:mt-4",
               },
               {
                 content: "いちおう登録したが<br/>手 応 え が ない",
-                gridAreaName: "intro-section-text3 mt-[100px]",
+                gridAreaName: "intro-section-text3 mt-[100px] md:-mt-[180px]",
               },
             ].map((item) => (
               <IntroText key={v4()} {...item} />

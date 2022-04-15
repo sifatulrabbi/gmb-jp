@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("./hero.css");
+@import url("./intro.css");
+
 @font-face {
   font-family: "biz";
   src: url("../assets/biz-udgothic-regular.ttc");
@@ -369,5 +372,3 @@ body {
     opacity: 0;
   }
 }
-
-@import url("./hero.css");

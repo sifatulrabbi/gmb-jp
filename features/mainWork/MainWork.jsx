@@ -29,7 +29,7 @@ function MainWork() {
         body={{
           className: "pb-8",
           content: (
-            <ul className="grid grid-cols-1 justify-start text-sm lg:text-base items-start gap-8 pl-6 lg:grid-cols-2">
+            <ul className="grid grid-cols-1 justify-start text-sm lg:text-base items-start gap-8 lg:grid-cols-2">
               {mainWork.map((work, index) => (
                 <li key={v4()} className="w-full">
                   <MainWorkCard {...work} index={index} />

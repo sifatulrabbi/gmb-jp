@@ -4,6 +4,7 @@
   --typewriterDelay: 0.5s;
   --blinkDelay: 0s;
   --blinkDuration: 800ms;
+  --heroDelay: 2s;
 }
 
 .hero-text1,
@@ -132,11 +133,32 @@
 .hero-left {
   grid-area: left;
   max-height: 100vh;
-  @apply flex justify-start items-start;
+  @apply flex justify-start items-start relative;
 }
 
 .hero-img {
-  width: clamp(150px, 50vw, 250px);
+  width: clamp(150px, 60vw, 250px);
+  transform: translate(20%, 10%);
+  opacity: 0;
+  animation: heroImg 1s ease var(--heroDelay) forwards;
+}
+
+.hero-left::before {
+  content: "";
+  @apply absolute -top-[110%] bottom-0 right-0 left-0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 52.6%);
+  animation: heroLeft 1.5s ease 2s forwards;
+}
+
+.hero-bottom ul {
+  height: 0%;
+  opacity: 0;
+  animation: heroBottomGrow 1s ease calc(var(--heroDelay) + 0.5s) forwards;
+}
+
+.hero-bottom ul li {
+  opacity: 0;
+  animation: text-slide-right 0.5s ease calc(var(--heroDelay) + 0.8s) forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -147,5 +169,25 @@
       "left bottom bottom";
     grid-template-columns: 0.4fr 1fr 1fr;
     grid-template-rows: 1fr auto;
+  }
+}
+
+@keyframes heroLeft {
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes heroImg {
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes heroBottomGrow {
+  to {
+    height: 100%;
+    opacity: 1;
   }
 }

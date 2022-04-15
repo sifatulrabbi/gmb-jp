@@ -29,10 +29,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="w-full flex mt-12 text-lg md:text-2xl hero-bottom">
-          <p className="text-xs uppercase font-feature-vrt2 writing-vertical h-max px-1 text-transparent">
-            About
-          </p>
+        <div className="w-full flex mt-12 text-lg md:text-2xl hero-bottom pl-6">
           <ul className="flex flex-col pl-4 pb-8 border-l-[1px] border-black">
             <li className="text-anim-slide-right">
               <span>GMBJAPAN</span>は
