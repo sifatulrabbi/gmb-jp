@@ -1,0 +1,37 @@
+.benefit-card-container .left {
+  animation: benefitCardLeft 0.6s ease 0.2s forwards;
+}
+
+.benefit-card-container .right {
+  animation: benefitCardRight 0.8s ease forwards;
+}
+
+.benefit-card-container::after {
+  content: "";
+  @apply bottom-0 absolute left-0 bg-black h-[1px] w-[0%];
+  animation: benefitCardGrow 1s ease 0.5s forwards;
+}
+
+.benefit-card-container:last-child::after {
+  @apply bg-white;
+}
+
+@keyframes benefitCardGrow {
+  to {
+    @apply w-full;
+  }
+}
+
+@keyframes benefitCardLeft {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes benefitCardRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

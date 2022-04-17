@@ -18,28 +18,30 @@ function BenefitsCard({ name, summary }) {
   return (
     <div
       ref={elementRef}
-      className="flex flex-row justify-center items-center border-b-[1px] py-6 border-black gap-4 lg:gap-[4vw] last:border-transparent"
+      className={`flex flex-row justify-center items-center py-6 gap-4 lg:gap-[4vw] last:border-transparent relative ${
+        inViewport ? "benefit-card-container" : ""
+      }`}
     >
       {/* card left part */}
       <div className="relative px-4 lg:px-6">
         <h5
-          className={`writing-vertical font-medium text-center opacity-0 -transform-y-4 ${
-            inViewport ? "anim-text-slide-down" : ""
-          }`}
+          className={`writing-vertical font-medium text-center opacity-0 translate-y-6 left`}
           dangerouslySetInnerHTML={{ __html: name }}
         ></h5>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1] w-[130%] flex items-center">
           <MessyLines />
         </div>
       </div>
-      <div className="w-max">
+      <div
+        className="w-max opacity-0 -translate-x-6 right"
+        style={{ animationDelay: "0.5s" }}
+      >
         <AiOutlineArrowRight className="block text-[1rem] lg:text-[2rem]" />
       </div>
       <p
-        className={`tracking-wider leading-relaxed opacity-0 -transform-y-4 ${
-          inViewport ? "anim-text-slide-down" : ""
-        }`}
+        className={`tracking-wider leading-relaxed opacity-0 -translate-x-6 right text-sm md:text-2xl`}
         dangerouslySetInnerHTML={{ __html: summary }}
+        style={{ animationDelay: "0.6s" }}
       ></p>
     </div>
   );
