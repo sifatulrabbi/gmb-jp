@@ -1,0 +1,168 @@
+/* keyframes */
+@keyframes menu-text-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem) scaleY(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scaleY(1);
+  }
+}
+
+@keyframes menu-text-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0px) scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem) scaleY(0.8);
+  }
+}
+
+@keyframes menu-left-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes menu-left-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+
+/* keyframes */
+@keyframes text-slide-right {
+  from {
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes text-slide-down {
+  from {
+    transform: translateY(-2.3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes text-slide-left {
+  from {
+    transform: translateX(0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-grow {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes grow-right {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes menu-btn-hover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes menu-btn-hover-text {
+  from {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(80%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-btn-hover-reverse {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menu-btn-hover-text-reverse {
+  from {
+    transform: translate(80%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes textSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* keyframes */
+@keyframes menu-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

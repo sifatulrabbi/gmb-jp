@@ -23,7 +23,7 @@ function Testimonials() {
     <section ref={elementRef} className="w-full h-max font-bliz bg-gray-200/70">
       {/* top part */}
       <div className="w-full flex flex-col justify-start items-start px-6 md:pl-[15vw]">
-        <div className="w-full border-l-[1px] border-black">
+        <div className="w-full">
           <h2 className="text-2xl -ml-[1px] pl-6 w-full border-l-[3px] border-black mt-16 mb-8 flex flex-row items-center gap-4 md:text-4xl">
             お客さまの声 <AiOutlineArrowRight />
           </h2>
@@ -36,30 +36,108 @@ function Testimonials() {
           className="w-full grid grid-cols-6 py-12 px-6"
           style={{ justifyItems: "center" }}
         >
-          {testimonials.map((testimonial, index) => (
-            <Link key={v4()} href="/">
-              <a
-                className={`flex flex-col justify-between gap-4 items-center w-full px-2 
-                border-l-2 last:border-r-2 border-gray-300 tracking-widest 
-                md:text-xl md:gap-[5vw] hover:bg-gray-100 duration-200 ease-out`}
-              >
-                <span
-                  className={`writing-vertical opacity-0 -translate-x-4 ${
-                    inViewport ? "text-anim-slide-right" : ""
-                  }`}
-                >
-                  {testimonial}
-                </span>
-                <span
-                  className={`opacity-0 -translate-x-4 ${
-                    inViewport ? "text-anim-slide-right" : ""
-                  }`}
-                >
-                  {index + 1}
-                </span>
-              </a>
-            </Link>
-          ))}
+          <Link key={v4()} href="/">
+            <a
+              className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
+                border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
+                md:text-xl md:gap-[5vw] hover:bg-gray-100 duration-200 ease-out 
+                opacity-0 translate-y-5
+                ${
+                  inViewport
+                    ? `animate-[textSlideUp_0.8s_ease_0.5s_forwards]`
+                    : ""
+                }`}
+            >
+              <span className="writing-vertical">顧問編集者とは?</span>
+              <span className="text-xs md:text-sm lg:text-base">1</span>
+            </a>
+          </Link>
+          <Link key={v4()} href="/">
+            <a
+              className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
+                border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
+                md:text-xl md:gap-[5vw] hover:bg-gray-100 duration-200 ease-out 
+                opacity-0 translate-y-5
+                ${
+                  inViewport
+                    ? `animate-[textSlideUp_0.8s_ease_0.7s_forwards]`
+                    : ""
+                }`}
+            >
+              <span className="writing-vertical">
+                顧問編集者は具体的に何をするのか?
+              </span>
+              <span className="text-xs md:text-sm lg:text-base">2</span>
+            </a>
+          </Link>
+          <Link key={v4()} href="/">
+            <a
+              className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
+                border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
+                md:text-xl md:gap-[5vw] hover:bg-gray-100 duration-200 ease-out 
+                opacity-0 translate-y-5
+                ${
+                  inViewport
+                    ? `animate-[textSlideUp_0.8s_ease_0.9s_forwards]`
+                    : ""
+                }`}
+            >
+              <span className="writing-vertical">
+                なぜ「経営者」が発信するのか?
+              </span>
+              <span className="text-xs md:text-sm lg:text-base">3</span>
+            </a>
+          </Link>
+          <Link key={v4()} href="/">
+            <a
+              className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
+                border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
+                md:text-xl md:gap-[5vw] hover:bg-gray-100 duration-200 ease-out 
+                opacity-0 translate-y-5
+                ${
+                  inViewport
+                    ? `animate-[textSlideUp_0.8s_ease_1.1s_forwards]`
+                    : ""
+                }`}
+            >
+              <span className="writing-vertical">
+                なぜ「企業側」に編集者が必要なのか?
+              </span>
+              <span className="text-xs md:text-sm lg:text-base">4</span>
+            </a>
+          </Link>
+          <Link key={v4()} href="/">
+            <a
+              className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
+                border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
+                md:text-xl md:gap-[5vw] hover:bg-gray-100 duration-200 ease-out 
+                opacity-0 translate-y-5
+                ${
+                  inViewport
+                    ? `animate-[textSlideUp_0.8s_ease_1.3s_forwards]`
+                    : ""
+                }`}
+            >
+              <span className="writing-vertical">どんな効果があるのか?</span>
+              <span className="text-xs md:text-sm lg:text-base">5</span>
+            </a>
+          </Link>
+          <Link key={v4()} href="/">
+            <a
+              className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
+                border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
+                md:text-xl md:gap-[5vw] hover:bg-gray-100 duration-200 ease-out 
+                opacity-0 translate-y-5
+                ${
+                  inViewport
+                    ? `animate-[textSlideUp_0.8s_ease_1.5s_forwards]`
+                    : ""
+                }`}
+            >
+              <span className="writing-vertical">お客さまの声</span>
+              <span className="text-xs md:text-sm lg:text-base">6</span>
+            </a>
+          </Link>
         </div>
       </div>
     </section>

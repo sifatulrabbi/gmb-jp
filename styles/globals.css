@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("./animations.css");
 @import url("./hero.css");
 @import url("./intro.css");
 @import url("./benefits.css");
@@ -98,10 +99,6 @@ body {
   grid-area: img;
 }
 
-/* menu animations */
-
-/* menu fade in out */
-
 /* classes */
 .menu-anim-fade-in {
   animation: menu-fade-in 0.5s ease forwards;
@@ -110,26 +107,6 @@ body {
   animation: menu-fade-out 0.5s ease forwards;
   pointer-events: none;
   animation-delay: 0.9s;
-}
-
-/* keyframes */
-@keyframes menu-fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes menu-fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
 }
 
 /* menu text drop anim */
@@ -159,69 +136,12 @@ body {
   animation: menu-left-up 0.5s ease forwards;
 }
 
-/* keyframes */
-@keyframes menu-text-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-1rem) scaleY(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scaleY(1);
-  }
-}
-
-@keyframes menu-text-up {
-  0% {
-    opacity: 1;
-    transform: translateY(0px) scaleY(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-1rem) scaleY(0.8);
-  }
-}
-
-@keyframes menu-left-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes menu-left-up {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-1rem);
-  }
-}
-
 /* text slide to right */
 
 /* classes */
 .text-anim-slide-right {
   animation: text-slide-right 0.7s ease forwards;
   animation-delay: 0.5s;
-}
-
-/* keyframes */
-@keyframes text-slide-right {
-  from {
-    transform: translateX(-1rem);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 .anim-text-slide-down {
@@ -233,32 +153,12 @@ body {
   @apply anim-text-slide-down;
   animation-delay: 0.5s;
 }
-@keyframes text-slide-down {
-  from {
-    transform: translateY(-2.3rem);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 
 .text-anim-slide-left {
   animation: text-slide-left 0.7s ease forwards;
   transform: translateX(1rem);
   opacity: 0;
   animation-delay: 0.5s;
-}
-@keyframes text-slide-left {
-  from {
-    transform: translateX(0.5rem);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 .anim-fade-in-grow {
@@ -267,42 +167,15 @@ body {
   opacity: 0;
   transform: scale(0.95);
 }
-@keyframes fade-in-grow {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 
 .grow-anim {
   transform-origin: top;
   animation: grow 0.5s ease forwards;
 }
-@keyframes grow {
-  from {
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(1);
-  }
-}
 
 .anim-grow-right {
   transform-origin: top;
-  animation: grow-right 0.5s ease forwards;
-  animation-delay: 0.5s;
-}
-@keyframes grow-right {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
+  animation: grow-right 0.8s ease forwards;
 }
 
 .menu-btn:hover .menu-btn-bar {
@@ -332,44 +205,4 @@ body {
 .menu-btn.show .menu-btn-bar {
   animation: none;
   @apply translate-y-0;
-}
-
-@keyframes menu-btn-hover {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes menu-btn-hover-text {
-  from {
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(80%, -50%);
-    opacity: 1;
-  }
-}
-
-@keyframes menu-btn-hover-reverse {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes menu-btn-hover-text-reverse {
-  from {
-    transform: translate(80%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  }
 }

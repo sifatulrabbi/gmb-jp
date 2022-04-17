@@ -35,20 +35,24 @@ function MainWorkCard({ Icon, name, summary, index }) {
         <div className="flex flex-col mx-auto justify-center items-center gap-8 max-w-sm">
           {/* name */}
           <h4
-            className={`writing-vertical font-medium tracking-[5px] text-lg font-japanese -translate-y-4 opacity-0 ${
-              inViewport ? "anim-text-slide-down" : ""
+            className={`writing-vertical font-medium tracking-[5px] text-lg font-japanese translate-y-4 opacity-0 ${
+              inViewport ? "animate-[textSlideUp_0.5s_ease_0.4s_forwards]" : ""
             }`}
           >
             {name}
           </h4>
           {/* icon */}
-          <div className="max-w-[136px] w-[30vw] h-auto">
+          <div
+            className={`max-w-[136px] w-[30vw] h-auto opacity-0 translate-y-4 ${
+              inViewport ? "animate-[textSlideUp_0.8s_ease_0.7s_forwards]" : ""
+            }`}
+          >
             <Icon />
           </div>
           {/* body */}
           <div
-            className={`w-full text-left tracking-wider leading-relaxed font-biz -translate-y-4 opacity-0 ${
-              inViewport ? "text-anim-slide-right" : ""
+            className={`w-full text-left tracking-wider leading-relaxed font-biz translate-y-4 opacity-0 ${
+              inViewport ? "animate-[textSlideUp_0.7s_ease_1.0s_forwards]" : ""
             }`}
             dangerouslySetInnerHTML={{ __html: summary }}
           ></div>
