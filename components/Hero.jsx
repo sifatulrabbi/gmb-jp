@@ -14,10 +14,12 @@ function Hero() {
           <TopLogo />
         </div>
         <div className="hero-middle">
-          <h1 className="font-yumin font-bold hero-h1 flex flex-col hero-text-container">
-            <div className="hero-text1">集客の景色を</div>
-            <span className="hero-text2">変えます</span>
-          </h1>
+          <div className="w-full h-full flex justify-center items-end md:items-center">
+            <h1 className="font-yumin font-bold hero-h1 flex flex-col hero-text-container mb-8">
+              <div className="hero-text1">集客の景色を</div>
+              <span className="hero-text2">変えます</span>
+            </h1>
+          </div>
           <div className="flex justify-end px-6">
             <div className="overflow-hidden hero-img">
               <Image

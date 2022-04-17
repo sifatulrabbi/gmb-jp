@@ -1,5 +1,5 @@
 .intro-text {
-  animation: introTextUp 0.8s ease 1s forwards;
+  animation: introTextUp 0.8s ease forwards;
 }
 
 .intro-messy-lines {

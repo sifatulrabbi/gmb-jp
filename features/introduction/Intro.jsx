@@ -7,7 +7,7 @@ import Section from "../../components/Section";
 import MessyLines from "../../components/CustomIcons/MessyLines";
 import { v4 } from "uuid";
 
-function IntroText({ content, gridAreaName }) {
+function IntroText({ content, gridAreaName, index }) {
   const elementRef = React.useRef(null);
   const { inViewport } = useInViewport(
     elementRef,
@@ -26,6 +26,7 @@ function IntroText({ content, gridAreaName }) {
         className={`z-[2] opacity-0 translate-y-4 ${
           inViewport ? "intro-text" : ""
         }`}
+        style={{ animationDelay: `${index / 5}s` }}
         dangerouslySetInnerHTML={{ __html: content }}
       ></p>
       <div
@@ -62,8 +63,8 @@ function Intro() {
                 content: "いちおう登録したが<br/>手 応 え が ない",
                 gridAreaName: "intro-section-text3 mt-[100px] md:-mt-[180px]",
               },
-            ].map((item) => (
-              <IntroText key={v4()} {...item} />
+            ].map((item, index) => (
+              <IntroText key={v4()} {...item} index={index} />
             ))}
             <div
               className={`mx-auto w-full h-full intro-section-img flex justify-center items-end`}
