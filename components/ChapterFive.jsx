@@ -10,7 +10,7 @@ function ChapterFive() {
     <Section
       className="bg-[#292929] text-white pr-0"
       wrapperClass="lg:flex-row"
-      asideTitle={{ content: "Chapter 5" }}
+      asideTitle={{ content: "Chapter 2" }}
       mainTitle={{
         className: "border-white pr-6",
         content: (

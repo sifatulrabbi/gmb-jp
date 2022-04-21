@@ -5,6 +5,8 @@ import { useInViewport } from "react-in-viewport";
 // components
 import Section from "./Section";
 import CircleLogo from "./CustomIcons/CircleLogo";
+import { logoImg } from "../static";
+import Image from "next/image";
 
 function ServicesCard() {
   return (
@@ -49,9 +51,12 @@ function Services() {
 
   return (
     <Section
-      className="bg-gray-200/70"
-      asideTitle={{ content: "Chapter 6" }}
-      mainTitle={{ className: "font-biz", content: "集客の景色が変わる" }}
+      className="bg-gray-200/70 border-white"
+      asideTitle={{ content: "" }}
+      mainTitle={{
+        className: "font-biz border-white",
+        content: "集客の景色が変わる",
+      }}
       body={{
         content: (
           <>
@@ -79,12 +84,7 @@ function Services() {
               </p>
             </div>
             <div className="flex w-full flex-col justify-start items-center font-biz mt-12 mb-6">
-              <span className="block font-bold text-4xl md:text-5xl lg:text-6xl">
-                GMB/JAPAN
-              </span>
-              <span className="block text-xs lg:text-base font-bold">
-                ジーエムビージャパン
-              </span>
+              <Image src={logoImg} alt="" />
             </div>
             <ServicesCard />
           </>

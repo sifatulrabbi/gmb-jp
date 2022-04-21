@@ -3,6 +3,8 @@ import React from "react";
 // components
 import Section from "./Section";
 import PersonTalk from "./CustomIcons/PersonTalk";
+import Image from "next/image";
+import { logoImg } from "../static";
 
 function FooterBottom() {
   return (
@@ -15,12 +17,7 @@ function FooterBottom() {
         <small className="text-sm">業界屈指の継続率</small>
       </p>
       <div className="flex flex-col justify-start items-center font-biz mt-12 mb-6">
-        <span className="block font-bold text-5xl mb-2 lg:text-6xl">
-          GMB/JAPAN
-        </span>
-        <span className="block text-xs text-right w-full font-bold">
-          ジーエムビージャパン
-        </span>
+        <Image src={logoImg} alt="" />
       </div>
     </section>
   );

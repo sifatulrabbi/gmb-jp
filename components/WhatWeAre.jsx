@@ -14,7 +14,7 @@ function WhatWeAre() {
       {/* first section */}
       <Section
         className="bg-[#292929] text-white pr-0 h-full justify-between lg:pl-[8vw] border-transparent"
-        asideTitle={{ content: "Chapter 3" }}
+        asideTitle={{ content: "Introduction" }}
         mainTitle={{
           className: "border-white pr-6",
           content: "マイビジ集客の決定版 GMBクラブとは?",
@@ -45,9 +45,9 @@ function WhatWeAre() {
           className: "border-white pr-6",
           content: (
             <span>
-              なぜ経営者が
+              飛躍的な効果がある
               <br />
-              発信するのか?
+              勝ち組パターンとは？
             </span>
           ),
         }}
