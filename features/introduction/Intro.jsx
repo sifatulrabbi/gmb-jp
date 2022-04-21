@@ -2,7 +2,6 @@
 import React from "react";
 import { useInViewport } from "react-in-viewport";
 // components
-import PersonThinking from "../../components/CustomIcons/PersonThinking";
 import Section from "../../components/Section";
 import MessyLines from "../../components/CustomIcons/MessyLines";
 import { v4 } from "uuid";
