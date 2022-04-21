@@ -2,7 +2,10 @@
 import React from "react";
 // components
 import Section from "./Section";
-import PersonTalk from "./CustomIcons/PersonTalk";
+import { personTalk } from "../static";
+import Image from "next/image";
+import Link from "next/link";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 // main component
 function ChapterFive() {
@@ -25,7 +28,12 @@ function ChapterFive() {
         className: "w-full pr-0",
         content: (
           <div className="relative w-full mb-12">
-            <PersonTalk />
+            <Image src={personTalk} alt="" />
+            <Link href="https://gmb-jp.com/tenken/mybiji">
+              <a className="absolute bottom-0 right-4 bg-[#3C3C3C] p-4 rounded-full lg:p-6">
+                <AiOutlineArrowRight className="text-white text-xl" />
+              </a>
+            </Link>
           </div>
         ),
       }}

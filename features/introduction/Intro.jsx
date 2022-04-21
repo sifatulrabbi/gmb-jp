@@ -6,6 +6,8 @@ import PersonThinking from "../../components/CustomIcons/PersonThinking";
 import Section from "../../components/Section";
 import MessyLines from "../../components/CustomIcons/MessyLines";
 import { v4 } from "uuid";
+import Image from "next/image";
+import { personThinking } from "../../static";
 
 function IntroText({ content, gridAreaName, index }) {
   const elementRef = React.useRef(null);
@@ -44,7 +46,7 @@ function IntroText({ content, gridAreaName, index }) {
 function Intro() {
   return (
     <Section
-      className="bg-gray-200/60"
+      className=""
       asideTitle={{ content: "Introduction" }}
       mainTitle={{ content: "Googleマイビジネス やってますか？" }}
       body={{
@@ -69,7 +71,7 @@ function Intro() {
             <div
               className={`mx-auto w-full h-full intro-section-img flex justify-center items-end`}
             >
-              <PersonThinking />
+              <Image src={personThinking} alt="" />
             </div>
           </div>
         ),
