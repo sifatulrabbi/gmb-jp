@@ -32,7 +32,7 @@ function MenuProvider() {
 
   return (
     <>
-      <header className="z-[1000] fixed top-0 right-0 left-0 h-[50px] flex justify-end items-start px-[5vw]">
+      <header className="z-[1000] fixed top-0 right-0 left-0 h-[50px] flex justify-end items-start">
         <MenuBtn show={menu.show} toggleMenu={toggleMenu} />
       </header>
       {mount && <Menu show={menu.show} />}

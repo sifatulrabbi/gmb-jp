@@ -20,7 +20,7 @@ function IntroText({ content, gridAreaName, index }) {
   return (
     <div
       ref={elementRef}
-      className={`relative writing-vertical flex justify-center items-center 
+      className={`relative writing-vertical flex justify-center items-center w-full
       ${gridAreaName}`}
     >
       <p

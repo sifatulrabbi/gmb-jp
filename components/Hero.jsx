@@ -8,7 +8,7 @@ import TopLogo from "./CustomIcons/TopLogo";
 // main component
 function Hero() {
   return (
-    <section className="font-yumin h-max flex min-h-screen">
+    <section className="font-yumin h-max flex min-h-screen w-full">
       <div className="hero-container">
         <div className="hero-left">
           <TopLogo />
