@@ -15,7 +15,7 @@ function FooterBottom() {
         独自ランキングファクター
         <br />
         GoogleマイビジネスAPI-Developer
-        <small className="text-sm">業界屈指の継続率</small>
+        <small className="text-sm block">業界屈指の継続率</small>
       </p>
       <div className="flex flex-col justify-start items-center font-biz mt-12 mb-6">
         <Image src={logoImg} alt="" />

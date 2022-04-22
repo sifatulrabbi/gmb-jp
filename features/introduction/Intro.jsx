@@ -45,7 +45,7 @@ function IntroText({ content, gridAreaName, index }) {
 function Intro() {
   return (
     <Section
-      className=""
+      className="bg-gray-200/60"
       asideTitle={{ content: "Introduction" }}
       mainTitle={{ content: "Googleマイビジネス やってますか？" }}
       body={{

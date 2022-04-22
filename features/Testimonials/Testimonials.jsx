@@ -36,7 +36,7 @@ function Testimonials() {
           className="w-full grid grid-cols-6 py-12 px-6"
           style={{ justifyItems: "center" }}
         >
-          <Link key={v4()} href="https://gmb-jp.com/tenken/mybiji/">
+          <Link key={v4()} href="https://gmb-jp.com/tenken/review/">
             <a
               className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
                 border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
@@ -52,7 +52,7 @@ function Testimonials() {
               <span className="text-xs md:text-sm lg:text-base">1</span>
             </a>
           </Link>
-          <Link key={v4()} href="https://gmb-jp.com/tenken/mybiji/">
+          <Link key={v4()} href="https://gmb-jp.com/tenken/review/">
             <a
               className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
                 border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
@@ -70,7 +70,7 @@ function Testimonials() {
               <span className="text-xs md:text-sm lg:text-base">2</span>
             </a>
           </Link>
-          <Link key={v4()} href="https://gmb-jp.com/tenken/mybiji/">
+          <Link key={v4()} href="https://gmb-jp.com/tenken/review/">
             <a
               className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
                 border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
@@ -88,7 +88,7 @@ function Testimonials() {
               <span className="text-xs md:text-sm lg:text-base">3</span>
             </a>
           </Link>
-          <Link key={v4()} href="https://gmb-jp.com/tenken/mybiji/">
+          <Link key={v4()} href="https://gmb-jp.com/tenken/review/">
             <a
               className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
                 border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
@@ -106,7 +106,7 @@ function Testimonials() {
               <span className="text-xs md:text-sm lg:text-base">4</span>
             </a>
           </Link>
-          <Link key={v4()} href="https://gmb-jp.com/tenken/mybiji/">
+          <Link key={v4()} href="https://gmb-jp.com/tenken/review/">
             <a
               className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
                 border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 
@@ -122,7 +122,7 @@ function Testimonials() {
               <span className="text-xs md:text-sm lg:text-base">5</span>
             </a>
           </Link>
-          <Link key={v4()} href="https://gmb-jp.com/tenken/mybiji/">
+          <Link key={v4()} href="https://gmb-jp.com/tenken/review/">
             <a
               className={`flex flex-col justify-between gap-[5vh] items-center w-full px-2 
                 border-l-[1px] last:border-r-2 border-gray-300 tracking-widest 

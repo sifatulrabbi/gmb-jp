@@ -5,16 +5,18 @@ export const menuState = atom({
   default: {
     show: false,
     links: [
-      { name: "ホーム", path: "/" },
-      { name: "顧問編集者とは", path: "/" },
-      { name: "お客さまの声", path: "/" },
-      { name: "編集者紹介", path: "/" },
-      { name: "お知らせ", path: "/" },
-      { name: "会社概要", path: "/" },
+      { name: "ホーム", path: "https://gmb-jp.com/" },
+      {
+        name: "マイビジネス点検とは",
+        path: "https://gmb-jp.com/tenken/mybiji/",
+      },
+      { name: "勝ち組パターン", path: "https://gmb-jp.com/tenken/katigumi/" },
+      { name: "GMBクラブ", path: "https://gmb-jp.com/tenken/gmbclub/" },
+      { name: "お客様の声", path: "https://gmb-jp.com/tenken/review/" },
     ],
     extraLinks: [
-      { name: "資料ダウンロード", path: "/" },
-      { name: "お問い合わせ", path: "/" },
+      { name: "お申し込み", path: "https://gmb-jp.com/tenken/order/" },
+      { name: "お問い合わせ", path: "https://gmb-jp.com/tenken/contact/" },
     ],
   },
 });
