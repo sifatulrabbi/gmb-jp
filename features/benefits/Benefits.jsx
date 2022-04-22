@@ -2,7 +2,7 @@
 import React from "react";
 // components
 import Image from "next/image";
-import { benefitsImg } from "../../static";
+import { benefitsImg } from "../../images";
 import BenefitsCard from "../../components/BenefitsCard";
 // states
 import { useRecoilValue } from "recoil";

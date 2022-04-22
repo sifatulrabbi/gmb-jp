@@ -2,7 +2,7 @@
 import React from "react";
 // components
 import Image from "next/image";
-import { heroImg } from "../static";
+import { heroImg } from "../images";
 import TopLogo from "./CustomIcons/TopLogo";
 
 // main component

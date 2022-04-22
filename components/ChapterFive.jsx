@@ -2,7 +2,7 @@
 import React from "react";
 // components
 import Section from "./Section";
-import { personTalk } from "../static";
+import { personTalk } from "../images";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";

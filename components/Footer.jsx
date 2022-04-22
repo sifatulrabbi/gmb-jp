@@ -4,7 +4,7 @@ import React from "react";
 import Section from "./Section";
 import Link from "next/link";
 import Image from "next/image";
-import { logoImg, personTalk } from "../static";
+import { logoImg, personTalk } from "../images";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 function FooterBottom() {

@@ -6,7 +6,7 @@ import Section from "../../components/Section";
 import MessyLines from "../../components/CustomIcons/MessyLines";
 import { v4 } from "uuid";
 import Image from "next/image";
-import { personThinking } from "../../static";
+import { personThinking } from "../../images";
 
 function IntroText({ content, gridAreaName, index }) {
   const elementRef = React.useRef(null);

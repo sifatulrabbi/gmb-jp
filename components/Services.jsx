@@ -5,7 +5,7 @@ import { useInViewport } from "react-in-viewport";
 // components
 import Section from "./Section";
 import CircleLogo from "./CustomIcons/CircleLogo";
-import { logoImg } from "../static";
+import { logoImg } from "../images";
 import Image from "next/image";
 
 function ServicesCard() {

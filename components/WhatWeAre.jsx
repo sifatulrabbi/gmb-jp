@@ -5,7 +5,7 @@ import Section from "./Section";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
-import { personDestination, personsChat } from "../static";
+import { personDestination, personsChat } from "../images";
 
 // main component
 function WhatWeAre() {
