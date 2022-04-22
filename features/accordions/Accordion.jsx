@@ -16,8 +16,7 @@ function Accordion({ title, body, dark, id }) {
 
   return (
     <div
-      className={`flex flex-col justify-start items-start border-2 overflow-hidden transition-[height] duration-[0.4s] ease
-       ${dark ? "border-[#424242]" : "border-[#B9B8B8]"} 
+      className={`flex flex-col justify-start items-start overflow-hidden transition-[height] duration-[0.4s] ease
        ${id === activeId ? "h-[540px]" : "h-[80px]"}`}
     >
       <button
@@ -33,7 +32,8 @@ function Accordion({ title, body, dark, id }) {
         />
       </button>
       <div
-        className="p-5 tracking-wider leading-relaxed"
+        className={`p-5 tracking-wider leading-relaxed border-2 h-full
+        ${dark ? "border-[#424242]" : "border-[#B9B8B8]"} `}
         dangerouslySetInnerHTML={{ __html: body }}
       ></div>
     </div>
