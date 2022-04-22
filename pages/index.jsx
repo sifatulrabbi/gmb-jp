@@ -10,6 +10,7 @@ import ChapterFive from "../components/ChapterFive";
 import Services from "../components/Services";
 import Testimonials from "../features/Testimonials/Testimonials";
 import Footer from "../components/Footer";
+import AccordionsContainer from "../features/accordions/AccordionsContainer";
 
 // main component
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <Intro />
+      <AccordionsContainer />
       <Benefits />
       <WhatWeAre />
       <MainWork />
