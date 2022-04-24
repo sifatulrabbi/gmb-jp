@@ -15,7 +15,7 @@ import AccordionsContainer from "../features/accordions/AccordionsContainer";
 // main component
 export default function Home() {
   return (
-    <>
+    <div className="min-w-[100vw] max-w-[100vw] flex flex-col h-max overflow-hidden">
       <Hero />
       <Intro />
       <AccordionsContainer />
@@ -26,6 +26,6 @@ export default function Home() {
       <Services />
       <Testimonials />
       <Footer />
-    </>
+    </div>
   );
 }

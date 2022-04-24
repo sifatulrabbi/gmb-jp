@@ -1,9 +1,9 @@
-export { default as heroImg } from "./top-img.svg";
+export { default as heroImg } from "./hero-img.png";
 export { default as topLogo } from "./top-logo.png";
-export { default as topIntro } from "./top-introduction-img.svg";
 export { default as benefitsImg } from "./benefits-img.png";
 export { default as logoImg } from "./logo-img.svg";
 export { default as personDestination } from "./person-destination.png";
 export { default as personTalk } from "./person-talk.png";
 export { default as personsChat } from "./persons-chat.png";
 export { default as personThinking } from "./person-thinking.png";
+export { default as logoImgWhite } from "./logo-white.png";

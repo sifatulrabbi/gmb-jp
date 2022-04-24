@@ -29,7 +29,7 @@ function Section({
   return (
     <section
       ref={sectionElementRef}
-      className={`w-[100vw] flex justify-start items-start px-6 md:pl-[15vw] font-yumin 
+      className={`w-full flex justify-start items-start px-6 md:pl-[15vw] font-yumin 
       ${className} 
       ${inViewport ? animations.section : ""}`}
     >

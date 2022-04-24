@@ -20,7 +20,7 @@ function Benefits() {
       body={{
         content: (
           <>
-            <div className="mx-auto max-w-[600px]">
+            <div className="ml-auto max-w-[600px]">
               <Image
                 src={benefitsImg}
                 alt="GMBクラブに入ると…"

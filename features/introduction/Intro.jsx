@@ -68,7 +68,7 @@ function Intro() {
               <IntroText key={v4()} {...item} index={index} />
             ))}
             <div
-              className={`mx-auto w-full h-full intro-section-img flex justify-center items-end`}
+              className={`mx-auto max-w-[60vw] w-full h-full intro-section-img flex justify-center items-end`}
             >
               <Image src={personThinking} alt="" />
             </div>
