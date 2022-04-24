@@ -10,7 +10,7 @@ import { personDestination, personsChat } from "../images";
 // main component
 function WhatWeAre() {
   return (
-    <div className="grid lg:grid-cols-2 lg:flex-row items-start lg:pl-[15vw]">
+    <div className="grid lg:grid-cols-2 lg:flex-row items-start lg:max-w-[90vw] lg:mx-auto lg:pl-[10vw]">
       {/* first section */}
       <Section
         className="bg-[#292929] text-white pr-0 h-full justify-between lg:pl-[8vw] border-transparent"

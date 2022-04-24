@@ -45,7 +45,7 @@ function IntroText({ content, gridAreaName, index }) {
 function Intro() {
   return (
     <Section
-      className="bg-gray-200/60"
+      className="bg-gray-100/80 lg:max-w-[90vw] lg:mx-auto lg:pl-[13vw]"
       asideTitle={{ content: "Introduction" }}
       mainTitle={{ content: "Googleマイビジネス やってますか？" }}
       body={{
@@ -68,7 +68,7 @@ function Intro() {
               <IntroText key={v4()} {...item} index={index} />
             ))}
             <div
-              className={`mx-auto max-w-[60vw] w-full h-full intro-section-img flex justify-center items-end`}
+              className={`mx-auto max-w-[70vw] lg:max-w-[20vw] w-full h-full intro-section-img flex justify-center items-end`}
             >
               <Image src={personThinking} alt="" />
             </div>

@@ -24,6 +24,7 @@ const accordionData = [
 function AccordionsContainer() {
   return (
     <Section
+      className="lg:max-w-[90vw] lg:mx-auto lg:pl-[13vw]"
       body={{
         content: (
           <div className="flex flex-col h-max">

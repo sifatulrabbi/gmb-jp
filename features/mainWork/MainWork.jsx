@@ -15,6 +15,7 @@ function MainWork() {
   return (
     <>
       <Section
+        className="lg:max-w-[90vw] lg:mx-auto lg:pl-[10vw]"
         wrapperClass="pb-[10vh]"
         asideTitle={{ content: "Chapter 4" }}
         mainTitle={{

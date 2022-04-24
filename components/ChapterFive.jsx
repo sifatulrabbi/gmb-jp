@@ -27,7 +27,7 @@ function ChapterFive() {
       body={{
         className: "w-full pr-0",
         content: (
-          <div className="relative w-full mb-12">
+          <div className="relative w-full mb-12 lg:max-w-[25vw] ml-auto">
             <Image src={personTalk} alt="" />
             <Link href="https://gmb-jp.com/tenken/mybiji">
               <a className="absolute bottom-0 right-10 lg:right-[10vw] bg-[#3C3C3C] p-4 rounded-full lg:p-6 transition-transform duration-300 ease hover:scale-110">
