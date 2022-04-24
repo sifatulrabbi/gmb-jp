@@ -49,7 +49,7 @@ function Footer() {
             <div className="relative w-full mb-12">
               <Image src={personTalk} alt="" />
               <Link href="https://gmb-jp.com/tenken/mybiji">
-                <a className="absolute bottom-0 right-4 bg-[#3C3C3C] p-4 rounded-full lg:p-6">
+                <a className="absolute bottom-0 right-10 lg:right-[10vw] bg-[#3C3C3C] p-4 rounded-full lg:p-6 transition-transform duration-300 ease hover:scale-110">
                   <AiOutlineArrowRight className="text-white text-xl" />
                 </a>
               </Link>

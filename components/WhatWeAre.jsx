@@ -27,7 +27,7 @@ function WhatWeAre() {
                 <Image src={personsChat} alt="" />
               </div>
               <Link href="https://gmb-jp.com/tenken/gmbclub/">
-                <a className="bg-[#3C3C3C] h-[50px] w-[50px] lg:h-[70px] lg:w-[70px] rounded-full flex justify-center items-center absolute right-8 bottom-0 translate-y-1/2">
+                <a className="bg-[#3C3C3C] h-[50px] w-[50px] lg:h-[70px] lg:w-[70px] rounded-full flex justify-center items-center absolute right-8 bottom-0 translate-y-1/2 transition-transform duration-300 ease hover:scale-110">
                   <AiOutlineArrowRight className="text-xl" />
                   <span className="block absolute text-transparent">
                     さらに詳しく読む
@@ -59,7 +59,7 @@ function WhatWeAre() {
             <div className="block w-full relative mt-8 mb-14">
               <Image src={personDestination} alt="" />
               <Link href="https://gmb-jp.com/tenken/katigumi/">
-                <a className="bg-[#292929] h-[50px] w-[50px] lg:h-[70px] lg:w-[70px] rounded-full flex justify-center items-center absolute right-8 bottom-0 translate-y-1/2">
+                <a className="bg-[#292929] h-[50px] w-[50px] lg:h-[70px] lg:w-[70px] rounded-full flex justify-center items-center absolute right-8 bottom-0 translate-y-1/2 transition-transform duration-300 ease hover:scale-110">
                   <AiOutlineArrowRight className="text-xl" />
                   <span className="block absolute text-transparent">
                     さらに詳しく読む
