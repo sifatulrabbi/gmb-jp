@@ -31,7 +31,7 @@ function MainWorkCard({ Icon, name, summary, index }) {
       </div>
 
       {/* main body */}
-      <div className="w-full lg:border-r-[1px]">
+      <div className={`w-full ${index % 2 === 0 ? "lg:border-r-[1px]" : ""}`}>
         <div className="flex flex-col mx-auto justify-center items-center gap-8 max-w-sm">
           {/* name */}
           <h4
